@@ -1,4 +1,6 @@
 language: ruby
+before_script:
+  - rvm get stable && rvm reload
 script:
   - bundle exec mspec .
 rvm:
